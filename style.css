@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #011627;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.header, .temperature-datails,
+.botton-container, .sunset-sunrise {
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+
+
+
+/* header */
+.header {
+    padding: 0 20px 0 20px;
+}
+
+.header__city-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header__input {
+    background-color:#d1d1d1;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 50px;
+    appearance: none;
+    margin-right: 10px; 
+    font-size: 16px;
+    color: #313336;
+}   
+
+.header__input textarea:focus, 
+    input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+.header__button {
+    padding-left: 10px;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0,25) 0 13px 27px -5px,
+                rgba(0, 0, 0, 0,3) 0 8px 16px -8px;
+    user-select: none;
+}
+
+
+.header__button:hover {
+    filter: brightness(1.35);
+}
+
+.header__current-date,
+.header__city-name {
+    font-family: "Ubuntu", sans-serif;
+    user-select: none;
+    }
+
+.header__current-date {
+    color: #dddddd;
+    font-size: 14px;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.header__city-name {
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color:#94ebff;
+    user-select: none;
+}
+ 
+
+/* current-temperature */
+.current-temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.current-temperature__weather-icon {
+    width: 135px;
+    user-select: none;
+}
+
+.current-temperature__description:first-letter {
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.current-temperature__description {
+    color: #dddddd;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+
+.current-temperature__info-label {
+    margin-top: 20px;
+    color: #b0c4dd;
+    font-size: 14px;
+    user-select: none;
+}
+
+
+.current-temperature__current-temperature {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px ;
+    color:#fff;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #293251; */
+
+/* Botton container */
+.botton-container {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    /* background-color:#4e7781; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px;
+}
+
+
+.temperature-datails { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 30px 0;
+    border-radius: 8px;
+    background:  #171f40;
+    user-select: none;
+}
+
+.temperature-datails__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #4e7781;
+}
+
+.temperature-datails__item:last-child {
+    border: none;
+}
+
+.temperature-datails__label {
+    color: #dddddd;
+    user-select: none;
+}
+
+.temperature-datails__value, 
+.sunset-sunrise__value {
+    margin-top: 7px;
+    color: #95dc9c;
+    user-select: none;
+}
+
+
+/* Sun */
+.sunset-sunrise {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    background:  #171f40;
+    margin-bottom: 0;
+}
+
+.sunset-sunrise__item:last-child {
+    border-right:none;
+}
+
+.sunset-sunrise__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #4e7781;
+}
+
+.sunset-sunrise__icon {
+    width: 33px;
+    height: 33px;
+    user-select: none;
+}  
